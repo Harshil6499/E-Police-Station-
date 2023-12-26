@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oc7-AO-YRa">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="E_Police_Station" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_image" translatesAutoresizingMaskIntoConstraints="NO" id="JW8-2W-KFA">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Police Logo" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-s4-Lw7">
+                                <rect key="frame" x="157" y="271" width="116" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="EFR-tt-fqs"/>
+                                    <constraint firstAttribute="width" constant="116" id="mCK-LW-SoJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ1-9i-UJi">
+                                <rect key="frame" x="334.33333333333331" y="857" width="75.666666666666686" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1o2-Ds-jcz"/>
+                                    <constraint firstAttribute="width" constant="75.670000000000002" id="1xu-0J-1aM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Visitor">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="VisitorBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QXY-kl-tA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpd-4V-3vC">
+                                <rect key="frame" x="20" y="857" width="110" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="8Kh-sO-AEf"/>
+                                    <constraint firstAttribute="height" constant="41" id="9gT-7v-vZm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Rules &amp; Regulation">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RulesBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MV7-Bn-BV0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ach-qM-24T">
+                                <rect key="frame" x="178" y="857" width="76" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="B0X-DU-rHW"/>
+                                    <constraint firstAttribute="height" constant="41" id="JK9-m2-h0a"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log In ">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ach-qM-24T" firstAttribute="leading" secondItem="Zpd-4V-3vC" secondAttribute="trailing" constant="48" id="2n1-tm-zq0"/>
+                            <constraint firstItem="Zpd-4V-3vC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="754" id="6Fp-hk-8Kc"/>
+                            <constraint firstItem="hJ1-9i-UJi" firstAttribute="leading" secondItem="Ach-qM-24T" secondAttribute="trailing" constant="80.329999999999998" id="CLX-QJ-fYJ"/>
+                            <constraint firstItem="Ach-qM-24T" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="CML-qZ-bAJ"/>
+                            <constraint firstItem="Zpd-4V-3vC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LS7-f1-jml"/>
+                            <constraint firstItem="QJa-s4-Lw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="168" id="Nhh-zU-mGZ"/>
+                            <constraint firstItem="hJ1-9i-UJi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="754" id="XXL-yi-wfQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hJ1-9i-UJi" secondAttribute="trailing" constant="20" id="bdj-1C-bJs"/>
+                            <constraint firstItem="QJa-s4-Lw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="fEE-63-hXe"/>
+                            <constraint firstItem="hJ1-9i-UJi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="feM-e3-r8B"/>
+                            <constraint firstItem="Zpd-4V-3vC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jb7-EC-jZh"/>
+                            <constraint firstItem="Ach-qM-24T" firstAttribute="top" secondItem="QJa-s4-Lw7" secondAttribute="bottom" constant="431" id="sFm-hr-IyW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QJa-s4-Lw7" secondAttribute="trailing" constant="157" id="xTT-EF-Mqn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TDt-fT-ukM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.8604651162791" y="-2.5751072961373391"/>
+        </scene>
+        <!--Missing Persons View Controller-->
+        <scene sceneID="03A-Dn-HMh">
+            <objects>
+                <viewController storyboardIdentifier="MissingPersonsViewController" id="vlp-sS-eBQ" customClass="MissingPersonsViewController" customModule="E_Police_Station" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gyn-dl-fTb">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nod-Xy-VLH">
+                                <rect key="frame" x="0.0" y="59" width="430" height="789"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IJ8-fU-E0s">
+                                    <size key="itemSize" width="193" height="204"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="MissingPersonsCollectionViewCell" id="25R-wg-xfX" customClass="MissingPersonsCollectionViewCell" customModule="E_Police_Station" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="204"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IyQ-37-9U3">
+                                            <rect key="frame" x="0.0" y="0.0" width="193" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label Label Label Label Label Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4l-uD-rac">
+                                                    <rect key="frame" x="8" y="144" width="176" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHI-P8-4V1">
+                                                    <rect key="frame" x="8" y="8" width="175" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IE-iw-jms">
+                                                    <rect key="frame" x="9" y="171" width="175" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="193" height="204"/>
+                                        <connections>
+                                            <outlet property="PersonCity" destination="1IE-iw-jms" id="Bwq-nv-nSw"/>
+                                            <outlet property="PersonImage" destination="qHI-P8-4V1" id="dIH-Ck-tWi"/>
+                                            <outlet property="PersonName" destination="S4l-uD-rac" id="hcl-2g-XJv"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSh-nH-kf8">
+                                <rect key="frame" x="107" y="856" width="216" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.1025861391" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Emergency Information">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="EmergencyBtn:" destination="vlp-sS-eBQ" eventType="touchUpInside" id="BYq-gW-Ocj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XYx-Lh-9U6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nod-Xy-VLH" firstAttribute="top" secondItem="XYx-Lh-9U6" secondAttribute="top" id="OgE-A7-OYa"/>
+                            <constraint firstItem="XYx-Lh-9U6" firstAttribute="bottom" secondItem="nod-Xy-VLH" secondAttribute="bottom" constant="50" id="PCm-9f-RrU"/>
+                            <constraint firstItem="nod-Xy-VLH" firstAttribute="trailing" secondItem="XYx-Lh-9U6" secondAttribute="trailing" id="kb2-OM-Cie"/>
+                            <constraint firstItem="nod-Xy-VLH" firstAttribute="leading" secondItem="XYx-Lh-9U6" secondAttribute="leading" id="zpx-rT-jh5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MyPersonCollectionView" destination="nod-Xy-VLH" id="CAS-Eb-MBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOj-26-kDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1459.5348837209301" y="-3.218884120171674"/>
+        </scene>
+        <!--Rules Regulation View Controller-->
+        <scene sceneID="ywB-S0-1g7">
+            <objects>
+                <viewController storyboardIdentifier="Rules_RegulationViewController" id="Ip5-yf-D7S" customClass="Rules_RegulationViewController" customModule="E_Police_Station" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aoI-ka-cOm">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFY-2G-Imy">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-05-8mj">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.   The name of accused persons with complete details including whether in custody or on remand shall be entered." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSj-zn-ctA">
+                                                <rect key="frame" x="8" y="67" width="414" height="71.666666666666686"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71.670000000000002" id="jP4-W9-pDv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd7-Ku-JUq">
+                                                <rect key="frame" x="8" y="145.66666666666666" width="414" height="71.666666666666657"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71.670000000000002" id="Ef2-Kh-VGD"/>
+                                                </constraints>
+                                                <string key="text">2.   Information regarding commission of non-cognizable offences including reports of enmities likely to lead to a breach of peace.</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhn-5x-yHq">
+                                                <rect key="frame" x="8" y="224.33333333333334" width="414" height="71.666666666666657"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71.670000000000002" id="nXk-vQ-2FO"/>
+                                                </constraints>
+                                                <string key="text">3.   The gist of FIR registered giving the No. FIR offence and the section of law under which the case is registered.
+</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNa-aG-pzv">
+                                                <rect key="frame" x="8" y="525" width="414" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="3TM-YN-XKX"/>
+                                                </constraints>
+                                                <string key="text">5.   Every officer returning from any investigation shall record his arrival regarding the investigation made, places visited the details of property seized &amp; deposited in the Malkhana.
+</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.   All case property received or released from P.S. Malkhana." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAV-hb-Xvp">
+                                                <rect key="frame" x="8" y="652" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="vaB-ED-X2e"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.   All case properties which are dispatched &amp; subsequently deposited in Sadar Malkhana." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMd-J6-v40">
+                                                <rect key="frame" x="8" y="709" width="414" height="71.666666666666629"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71.670000000000002" id="Axt-t2-L2g"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxc-MX-YBz">
+                                                <rect key="frame" x="8" y="787.66666666666663" width="414" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="cYm-cV-3q0"/>
+                                                </constraints>
+                                                <string key="text">8.   The hour of receipt &amp; dispatch of all communications, cash etc. shall be entered. A road certificate shall be issued for di patch (Reg. No. 21) and a receipt will be issued regarding cash etc. (Register No.22).</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zut-yQ-PmZ">
+                                                <rect key="frame" x="8" y="914.66666666666663" width="414" height="119.99999999999989"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="Wul-GE-VTJ"/>
+                                                </constraints>
+                                                <string key="text">9.   All arrivals at and dispatches from police station of persons in custody and all admissions to and removal from the police station lock up, whether temporary or otherwise.</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soT-HE-vRf">
+                                                <rect key="frame" x="8" y="1041.6666666666667" width="414" height="95.666666666666742"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="95.670000000000002" id="qAH-eZ-02B"/>
+                                                </constraints>
+                                                <string key="text">10.   The hour &amp; date of receipt and of service or execution of process i.e. summons or warrants and hour and date of return made of each such process.</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNy-uX-Ifp">
+                                                <rect key="frame" x="8" y="1144.3333333333333" width="414" height="167.33333333333326"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="167.33000000000001" id="LTE-ha-R5K"/>
+                                                </constraints>
+                                                <string key="text">11.   Report regarding properties in Malkhana (Store Room) under P.P. Rule 22.18. It is mandatory for the SHO to check the Malkhana and the properties therein twice a month. The report as required under P.P. Rule 22.18 shall be made on the day after checking</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.   The report regarding excess of expenditure over the permanent advance (as laid down in PP Rule 22.71)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwi-0Z-asm">
+                                                <rect key="frame" x="8" y="1318.6666666666667" width="414" height="71.666666666666742"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71.670000000000002" id="T1k-V7-0kZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXi-Oa-Q5s">
+                                                <rect key="frame" x="8" y="1397.3333333333333" width="414" height="71.666666666666742"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71.670000000000002" id="LKK-fZ-kvt"/>
+                                                </constraints>
+                                                <string key="text">13.   The deposit or removal from the post office safe if embedded in the police station, the exact hour being given in every case.</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5j-gx-oB7">
+                                                <rect key="frame" x="8" y="303" width="414" height="215"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="215" id="Mrf-fb-IvO"/>
+                                                </constraints>
+                                                <string key="text">4.   The hour of arrival and departure On duty at or from a Police Station of all enrolled police officers of whatever rank, whether posted at the police station or elsewhere, with a statement of the nature of their duties. This entry shall be made immediately on arrival or prior to the departure of the officer concerned and shall be attested by the latter personally by affixing his signature.</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="zut-yQ-PmZ" secondAttribute="trailing" constant="8" id="0kd-Zh-xKY"/>
+                                            <constraint firstItem="fd7-Ku-JUq" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="17t-dc-VsU"/>
+                                            <constraint firstItem="tXi-Oa-Q5s" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="2Uu-gd-XPC"/>
+                                            <constraint firstAttribute="trailing" secondItem="soT-HE-vRf" secondAttribute="trailing" constant="8" id="3mQ-Dv-opT"/>
+                                            <constraint firstAttribute="height" constant="1500" id="4lm-gw-Flf"/>
+                                            <constraint firstAttribute="trailing" secondItem="tMd-J6-v40" secondAttribute="trailing" constant="8" id="56B-09-9m5"/>
+                                            <constraint firstItem="tMd-J6-v40" firstAttribute="top" secondItem="gAV-hb-Xvp" secondAttribute="bottom" constant="7" id="74u-Eg-VPd"/>
+                                            <constraint firstAttribute="trailing" secondItem="p5j-gx-oB7" secondAttribute="trailing" constant="8" id="7MO-GD-L08"/>
+                                            <constraint firstItem="zxc-MX-YBz" firstAttribute="top" secondItem="tMd-J6-v40" secondAttribute="bottom" constant="7" id="9Oh-ff-ufW"/>
+                                            <constraint firstItem="soT-HE-vRf" firstAttribute="top" secondItem="zut-yQ-PmZ" secondAttribute="bottom" constant="7" id="Bxj-ag-oTO"/>
+                                            <constraint firstItem="fd7-Ku-JUq" firstAttribute="top" secondItem="NSj-zn-ctA" secondAttribute="bottom" constant="7" id="EUJ-P3-Dir"/>
+                                            <constraint firstItem="Uhn-5x-yHq" firstAttribute="top" secondItem="fd7-Ku-JUq" secondAttribute="bottom" constant="7" id="Iem-pp-jZh"/>
+                                            <constraint firstItem="zxc-MX-YBz" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="ItI-ob-W8S"/>
+                                            <constraint firstItem="YNa-aG-pzv" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="JJ7-Na-MaY"/>
+                                            <constraint firstItem="gwi-0Z-asm" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="Kgl-Xs-Ye4"/>
+                                            <constraint firstItem="tXi-Oa-Q5s" firstAttribute="top" secondItem="gwi-0Z-asm" secondAttribute="bottom" constant="7" id="LDt-wa-G7f"/>
+                                            <constraint firstAttribute="trailing" secondItem="YNa-aG-pzv" secondAttribute="trailing" constant="8" id="QeR-tz-ewm"/>
+                                            <constraint firstItem="tMd-J6-v40" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="RO9-W8-B9Q"/>
+                                            <constraint firstItem="soT-HE-vRf" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="S4j-Sr-WI0"/>
+                                            <constraint firstAttribute="trailing" secondItem="zxc-MX-YBz" secondAttribute="trailing" constant="8" id="SNC-5D-h7a"/>
+                                            <constraint firstAttribute="trailing" secondItem="cNy-uX-Ifp" secondAttribute="trailing" constant="8" id="UmS-Nc-edk"/>
+                                            <constraint firstAttribute="trailing" secondItem="NSj-zn-ctA" secondAttribute="trailing" constant="8" id="VPB-HF-pFc"/>
+                                            <constraint firstItem="gAV-hb-Xvp" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="Y0R-CK-j1x"/>
+                                            <constraint firstItem="cNy-uX-Ifp" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="ZJ6-mq-Eav"/>
+                                            <constraint firstItem="gwi-0Z-asm" firstAttribute="top" secondItem="cNy-uX-Ifp" secondAttribute="bottom" constant="7" id="bre-xA-ALu"/>
+                                            <constraint firstItem="NSj-zn-ctA" firstAttribute="top" secondItem="ddA-05-8mj" secondAttribute="top" constant="67" id="chl-pv-zRP"/>
+                                            <constraint firstItem="Uhn-5x-yHq" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="dkh-In-XcW"/>
+                                            <constraint firstAttribute="trailing" secondItem="tXi-Oa-Q5s" secondAttribute="trailing" constant="8" id="i2e-Ly-557"/>
+                                            <constraint firstItem="p5j-gx-oB7" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="ihc-3a-BcQ"/>
+                                            <constraint firstItem="YNa-aG-pzv" firstAttribute="top" secondItem="p5j-gx-oB7" secondAttribute="bottom" constant="7" id="jfK-ec-bZc"/>
+                                            <constraint firstAttribute="trailing" secondItem="fd7-Ku-JUq" secondAttribute="trailing" constant="8" id="kYR-CM-hU2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uhn-5x-yHq" secondAttribute="trailing" constant="8" id="ptq-LL-1kK"/>
+                                            <constraint firstItem="gAV-hb-Xvp" firstAttribute="top" secondItem="YNa-aG-pzv" secondAttribute="bottom" constant="7" id="rki-VK-hSR"/>
+                                            <constraint firstItem="p5j-gx-oB7" firstAttribute="top" secondItem="Uhn-5x-yHq" secondAttribute="bottom" constant="7" id="siR-ZN-c5m"/>
+                                            <constraint firstAttribute="trailing" secondItem="gwi-0Z-asm" secondAttribute="trailing" constant="8" id="tBf-A0-cR9"/>
+                                            <constraint firstItem="zut-yQ-PmZ" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="uiw-fs-CEo"/>
+                                            <constraint firstAttribute="trailing" secondItem="gAV-hb-Xvp" secondAttribute="trailing" constant="8" id="uqJ-Ol-oaX"/>
+                                            <constraint firstItem="NSj-zn-ctA" firstAttribute="leading" secondItem="ddA-05-8mj" secondAttribute="leading" constant="8" id="wUo-HK-lPl"/>
+                                            <constraint firstItem="cNy-uX-Ifp" firstAttribute="top" secondItem="soT-HE-vRf" secondAttribute="bottom" constant="7" id="yJU-yc-T9Z"/>
+                                            <constraint firstItem="zut-yQ-PmZ" firstAttribute="top" secondItem="zxc-MX-YBz" secondAttribute="bottom" constant="7" id="zXy-qz-2dd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ddA-05-8mj" secondAttribute="bottom" id="ZFF-GR-maw"/>
+                                    <constraint firstItem="ddA-05-8mj" firstAttribute="top" secondItem="dFY-2G-Imy" secondAttribute="top" id="cbs-qI-Hzx"/>
+                                    <constraint firstItem="ddA-05-8mj" firstAttribute="leading" secondItem="dFY-2G-Imy" secondAttribute="leading" id="jtn-bx-Qsb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ddA-05-8mj" secondAttribute="trailing" id="tWk-8b-X9k"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s7f-IU-pAK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dFY-2G-Imy" secondAttribute="bottom" id="5cJ-ll-JWZ"/>
+                            <constraint firstItem="dFY-2G-Imy" firstAttribute="top" secondItem="aoI-ka-cOm" secondAttribute="top" id="Gb5-Nl-ffe"/>
+                            <constraint firstItem="dFY-2G-Imy" firstAttribute="leading" secondItem="s7f-IU-pAK" secondAttribute="leading" id="HmL-qt-NVP"/>
+                            <constraint firstItem="dFY-2G-Imy" firstAttribute="trailing" secondItem="s7f-IU-pAK" secondAttribute="trailing" id="WNd-l3-9vs"/>
+                            <constraint firstItem="ddA-05-8mj" firstAttribute="width" secondItem="aoI-ka-cOm" secondAttribute="width" id="rfq-QU-fCN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MyScrollView" destination="dFY-2G-Imy" id="56h-nR-ggo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NcV-cg-Oug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2091.6279069767443" y="-3.218884120171674"/>
+        </scene>
+        <!--Emergency View Controller-->
+        <scene sceneID="E6c-2U-ecc">
+            <objects>
+                <viewController storyboardIdentifier="EmergencyViewController" id="YdU-z2-S13" customClass="EmergencyViewController" customModule="E_Police_Station" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qDO-ti-zYB">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Crime Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yav-zu-oKk">
+                                <rect key="frame" x="20" y="115" width="390" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Add More Information" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8uB-f6-sdP">
+                                <rect key="frame" x="20" y="194" width="390" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQr-ef-yQy">
+                                <rect key="frame" x="20" y="310" width="390" height="545"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEW-xM-wRy">
+                                <rect key="frame" x="178" y="863" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="goToCurrentLocation:" destination="YdU-z2-S13" eventType="touchUpInside" id="gry-Zh-LdJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nbG-R5-9pc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="AddMoreInformation" destination="8uB-f6-sdP" id="K7J-60-HLB"/>
+                        <outlet property="CrimeTextField" destination="Yav-zu-oKk" id="bQF-Ih-Odh"/>
+                        <outlet property="currentLocationButton" destination="gEW-xM-wRy" id="e7D-Jt-AuE"/>
+                        <outlet property="mapView" destination="RQr-ef-yQy" id="E46-GH-62z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liH-C8-eh2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2723.7209302325582" y="-3.218884120171674"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Drv-1t-4RX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oc7-AO-YRa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KEa-zK-Lr0">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sAL-Sd-ayj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axl-mV-GbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122.90076335877862" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Police Logo" width="278" height="359"/>
+        <image name="bg_image" width="1080" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
