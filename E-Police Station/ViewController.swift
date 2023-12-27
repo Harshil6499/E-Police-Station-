@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         let main = storyboard?.instantiateViewController(withIdentifier: "MissingPersonsViewController") as! MissingPersonsViewController
         self.navigationController?.pushViewController(main, animated: true)
     }
+    @IBAction func LogInBTN(_ sender: Any) {
+        let main = storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
+        self.navigationController?.pushViewController(main, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
