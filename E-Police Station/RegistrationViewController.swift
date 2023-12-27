@@ -18,6 +18,9 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var UserReEnterPasswordTXT: UITextField!
     
     @IBOutlet weak var ConfirmRegistrationBTN: UIButton!
+    @IBOutlet weak var ShowHideBtn: UIButton!
+    @IBOutlet weak var ReShowHideBtn: UIButton!
+    
     
     
     //Actions Text Fields And Button
@@ -146,8 +149,29 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
         UserReEnterPasswordTXT.isSecureTextEntry = true
         UserReEnterPasswordTXT.delegate = self
-      
+        
+        ShowHideBtn.addTarget(self, action: #selector(togglePasswordVisibility1), for: .touchUpInside)
+        
+        ReShowHideBtn.addTarget(self, action: #selector(togglePasswordVisibility2), for: .touchUpInside)
     }
+    
+    @objc func togglePasswordVisibility1() {
+            // Toggle the secureTextEntry property of the UITextField
+        UsePasswordTXT.isSecureTextEntry.toggle()
+
+            // Change the button title based on the password visibility
+            let buttonTitle = UsePasswordTXT.isSecureTextEntry ? "Show" : "Hide"
+        ShowHideBtn.setTitle(buttonTitle, for: .normal)
+        }
+    
+    @objc func togglePasswordVisibility2() {
+            // Toggle the secureTextEntry property of the UITextField
+        UserReEnterPasswordTXT.isSecureTextEntry.toggle()
+
+            // Change the button title based on the password visibility
+            let buttonTitle = UserReEnterPasswordTXT.isSecureTextEntry ? "Show" : "Hide"
+        ReShowHideBtn.setTitle(buttonTitle, for: .normal)
+        }
 }
 extension RegistrationViewController: UIPickerViewDelegate,UIPickerViewDataSource{
     

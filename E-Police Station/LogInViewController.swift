@@ -16,6 +16,7 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
     //Button Outlate
     @IBOutlet weak var Loginbtn: UIButton!
     @IBOutlet weak var createnewaccountbtn: UIButton!
+    @IBOutlet weak var showPasswordButton: UIButton!
     
     //Button Action
     @IBAction func LogInBtn(_ sender: Any) {
@@ -51,28 +52,25 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
         UserPasswordTextField.isSecureTextEntry = true
         UserPasswordTextField.delegate = self
         
-
+        showPasswordButton.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
     }
     
+    func all_in_1(to textField: UITextField) {
+        textField.layer.cornerRadius = 20
+        textField.layer.masksToBounds = true
+        textField.layer.borderWidth = 0.7
+
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
+        textField.leftView = paddingView
+        textField.leftViewMode = .always
+        
+    }
     func TextFiled_Button_edits(){
         Loginbtn.layer.cornerRadius = 20
         Loginbtn.layer.masksToBounds = true
         
-        UserEmailTextField.layer.cornerRadius = 20
-        UserEmailTextField.layer.masksToBounds = true
-        UserEmailTextField.layer.borderWidth = 0.6
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: UserEmailTextField.frame.height))
-        UserEmailTextField.leftView = paddingView
-        UserEmailTextField.leftViewMode = .always
-        
-        UserPasswordTextField.layer.cornerRadius = 20
-        UserPasswordTextField.layer.masksToBounds = true
-        UserPasswordTextField.layer.borderWidth = 0.6
-        let paddingView1 = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: UserPasswordTextField.frame.height))
-        UserPasswordTextField.leftView = paddingView1
-        UserPasswordTextField.leftViewMode = .always
-        
-        
+        all_in_1(to: UserEmailTextField)
+        all_in_1(to: UserPasswordTextField)
     }
     
     func emailinvalidate(email:String) -> String?
@@ -88,6 +86,15 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
         }
         return nil
     }
+    
+    @objc func togglePasswordVisibility() {
+            // Toggle the secureTextEntry property of the UITextField
+        UserPasswordTextField.isSecureTextEntry.toggle()
+
+            // Change the button title based on the password visibility
+            let buttonTitle = UserPasswordTextField.isSecureTextEntry ? "Show" : "Hide"
+            showPasswordButton.setTitle(buttonTitle, for: .normal)
+        }
 }
 
 

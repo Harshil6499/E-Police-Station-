@@ -504,6 +504,18 @@
                                     <action selector="CreateNewAcoountBtn:" destination="NdE-Vy-nS2" eventType="touchUpInside" id="Abd-wD-BV2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VG-RP-fOj">
+                                <rect key="frame" x="314" y="449" width="68" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Lwd-VI-bun"/>
+                                    <constraint firstAttribute="width" constant="68" id="Vfk-k3-MFH"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rao-cc-S8a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -512,12 +524,14 @@
                             <constraint firstItem="qDD-0N-20m" firstAttribute="leading" secondItem="Rao-cc-S8a" secondAttribute="leading" id="C2q-ex-Gqe"/>
                             <constraint firstItem="Rao-cc-S8a" firstAttribute="trailing" secondItem="fdr-20-rVf" secondAttribute="trailing" constant="49" id="G7j-vq-dHE"/>
                             <constraint firstItem="SFp-bj-dol" firstAttribute="leading" secondItem="Rao-cc-S8a" secondAttribute="leading" constant="99" id="JZC-hN-UZO"/>
+                            <constraint firstItem="2VG-RP-fOj" firstAttribute="top" secondItem="CxA-fl-WzS" secondAttribute="bottom" constant="54" id="Nwj-HK-zJZ"/>
                             <constraint firstItem="Rao-cc-S8a" firstAttribute="trailing" secondItem="SFp-bj-dol" secondAttribute="trailing" constant="99" id="Rly-wU-fdy"/>
                             <constraint firstItem="FwK-EV-Pxf" firstAttribute="leading" secondItem="Rao-cc-S8a" secondAttribute="leading" constant="99" id="VBp-fd-p9W"/>
                             <constraint firstAttribute="bottom" secondItem="qDD-0N-20m" secondAttribute="bottom" id="Xfm-ue-KOG"/>
                             <constraint firstItem="fdr-20-rVf" firstAttribute="leading" secondItem="Rao-cc-S8a" secondAttribute="leading" constant="49" id="amh-W6-qdF"/>
                             <constraint firstItem="qDD-0N-20m" firstAttribute="trailing" secondItem="Rao-cc-S8a" secondAttribute="trailing" id="bK3-0u-7gu"/>
                             <constraint firstItem="SFp-bj-dol" firstAttribute="top" secondItem="fdr-20-rVf" secondAttribute="bottom" constant="60" id="dRo-pM-zn0"/>
+                            <constraint firstItem="Rao-cc-S8a" firstAttribute="trailing" secondItem="2VG-RP-fOj" secondAttribute="trailing" constant="48" id="ixG-Yc-KCi"/>
                             <constraint firstItem="qDD-0N-20m" firstAttribute="top" secondItem="kVy-in-ipP" secondAttribute="top" id="k42-ju-5bm"/>
                             <constraint firstItem="Rao-cc-S8a" firstAttribute="trailing" secondItem="FwK-EV-Pxf" secondAttribute="trailing" constant="99" id="lyS-wO-b1x"/>
                             <constraint firstItem="FwK-EV-Pxf" firstAttribute="top" secondItem="Rao-cc-S8a" secondAttribute="top" constant="109" id="maM-mw-5ih"/>
@@ -531,6 +545,7 @@
                         <outlet property="UserEmailTextField" destination="CxA-fl-WzS" id="AYj-lN-yLJ"/>
                         <outlet property="UserPasswordTextField" destination="fdr-20-rVf" id="VrV-mg-fWK"/>
                         <outlet property="createnewaccountbtn" destination="AA7-zC-IZk" id="X7u-sd-QQC"/>
+                        <outlet property="showPasswordButton" destination="2VG-RP-fOj" id="u8k-I6-Cvq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z8-AY-D2j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -636,6 +651,30 @@
                                     <action selector="ConfirmRegistrationBtn:" destination="jpF-BB-ndQ" eventType="touchUpInside" id="d08-Hs-14C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qx-G6-l5t">
+                                <rect key="frame" x="315" y="480" width="66" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="Rnh-aO-bEr"/>
+                                    <constraint firstAttribute="height" constant="45" id="U0C-NZ-VKS"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-dJ-oMZ">
+                                <rect key="frame" x="315" y="555" width="66" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="lCS-NX-NU0"/>
+                                    <constraint firstAttribute="width" constant="66" id="wTE-Ta-BGh"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ost-bo-Gc5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -645,10 +684,13 @@
                             <constraint firstItem="Zth-cN-pOE" firstAttribute="leading" secondItem="Ost-bo-Gc5" secondAttribute="leading" constant="49" id="8E9-4H-mLa"/>
                             <constraint firstItem="Ost-bo-Gc5" firstAttribute="trailing" secondItem="GvB-jw-cB2" secondAttribute="trailing" constant="49" id="9gF-Yf-Tr7"/>
                             <constraint firstItem="gZJ-IO-1fr" firstAttribute="leading" secondItem="Ost-bo-Gc5" secondAttribute="leading" constant="49" id="A2Z-Y4-1GH"/>
+                            <constraint firstItem="0qx-G6-l5t" firstAttribute="top" secondItem="GvB-jw-cB2" secondAttribute="bottom" constant="30" id="BBu-Pq-xB2"/>
+                            <constraint firstItem="Ost-bo-Gc5" firstAttribute="trailing" secondItem="0qx-G6-l5t" secondAttribute="trailing" constant="49" id="Bqq-hr-Tik"/>
                             <constraint firstItem="Ost-bo-Gc5" firstAttribute="trailing" secondItem="Zth-cN-pOE" secondAttribute="trailing" constant="49" id="Ch5-4V-aSE"/>
                             <constraint firstItem="qMi-1D-6i0" firstAttribute="leading" secondItem="Ost-bo-Gc5" secondAttribute="leading" id="D9E-hp-NrW"/>
                             <constraint firstItem="GvB-jw-cB2" firstAttribute="leading" secondItem="Ost-bo-Gc5" secondAttribute="leading" constant="49" id="Fq8-mP-am3"/>
                             <constraint firstItem="Ost-bo-Gc5" firstAttribute="trailing" secondItem="OVa-v5-11r" secondAttribute="trailing" constant="49" id="HpW-5h-OWF"/>
+                            <constraint firstItem="Ost-bo-Gc5" firstAttribute="trailing" secondItem="lgL-dJ-oMZ" secondAttribute="trailing" constant="49" id="KgR-Ns-3Ot"/>
                             <constraint firstItem="OVa-v5-11r" firstAttribute="top" secondItem="i76-Fh-s9A" secondAttribute="bottom" constant="30" id="KiA-n6-Cdt"/>
                             <constraint firstItem="SL4-UT-joC" firstAttribute="leading" secondItem="Ost-bo-Gc5" secondAttribute="leading" constant="79" id="MHf-S0-hjb"/>
                             <constraint firstItem="gZJ-IO-1fr" firstAttribute="top" secondItem="Zth-cN-pOE" secondAttribute="bottom" constant="30" id="Nq0-39-aQr"/>
@@ -666,12 +708,15 @@
                             <constraint firstItem="Ost-bo-Gc5" firstAttribute="trailing" secondItem="B80-fm-IuB" secondAttribute="trailing" constant="49" id="trK-0K-coq"/>
                             <constraint firstItem="i76-Fh-s9A" firstAttribute="top" secondItem="kuM-JI-Llx" secondAttribute="bottom" constant="40" id="uoW-hg-bp3"/>
                             <constraint firstItem="B80-fm-IuB" firstAttribute="leading" secondItem="Ost-bo-Gc5" secondAttribute="leading" constant="49" id="v6A-fA-qoH"/>
+                            <constraint firstItem="lgL-dJ-oMZ" firstAttribute="top" secondItem="Zth-cN-pOE" secondAttribute="bottom" constant="30" id="vVi-rI-8Dc"/>
                             <constraint firstItem="Ost-bo-Gc5" firstAttribute="trailing" secondItem="SL4-UT-joC" secondAttribute="trailing" constant="78" id="xMR-ti-J66"/>
                             <constraint firstItem="qMi-1D-6i0" firstAttribute="top" secondItem="5VO-fk-ZSv" secondAttribute="top" id="yq3-sI-KhW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ConfirmRegistrationBTN" destination="SL4-UT-joC" id="F4M-De-IqC"/>
+                        <outlet property="ReShowHideBtn" destination="lgL-dJ-oMZ" id="3Lj-VK-qYD"/>
+                        <outlet property="ShowHideBtn" destination="0qx-G6-l5t" id="JqB-fe-K2b"/>
                         <outlet property="UsePasswordTXT" destination="Zth-cN-pOE" id="dx9-a1-c6e"/>
                         <outlet property="UserEmailTXT" destination="OVa-v5-11r" id="mGm-Pb-Vrm"/>
                         <outlet property="UserGenderTXT" destination="GvB-jw-cB2" id="8Zr-OX-3Me"/>
@@ -683,6 +728,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4uj-n2-ck2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4001.8604651162791" y="-3.218884120171674"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="J4d-s5-leS">
+            <objects>
+                <viewController id="4u5-Vn-ITe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CGq-uW-8ek">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Oit-xY-wJZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUf-oK-BOR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4662" y="-3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Drv-1t-4RX">
@@ -710,7 +770,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
