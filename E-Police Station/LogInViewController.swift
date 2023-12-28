@@ -31,6 +31,7 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
     //Text Fields Actions
     @IBAction func UserEmailTextFieldAction(_ sender: Any) {
         if let Wrong = UserEmailTextField.text {
+            UserEmailTextField.layer.borderColor = UIColor.blue.cgColor
             if emailinvalidate(email: Wrong) != nil
             {
                 UserEmailTextField.layer.borderColor = UIColor.red.cgColor
@@ -42,12 +43,16 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
             }
         }
     }
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UserEmailTextField.layer.borderColor = UIColor.gray.cgColor
+        UserEmailTextField.layer.borderWidth = 1.0
+        
+        UserEmailTextField.delegate = self
+        
+        
         TextFiled_Button_edits()
         UserPasswordTextField.isSecureTextEntry = true
         UserPasswordTextField.delegate = self

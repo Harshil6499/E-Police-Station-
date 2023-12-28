@@ -9,6 +9,8 @@ import UIKit
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
+    
+    
     //Outlates Text Fields And Button
     @IBOutlet weak var UserNameTXT: UITextField!
     @IBOutlet weak var UserEmailTXT: UITextField!
@@ -71,6 +73,11 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func ConfirmRegistrationBtn(_ sender: Any) {
+        if validate{
+            let main = storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
+            self.navigationController?.pushViewController(main, animated: true)
+            _ = SweetAlert().showAlert("Good job!", subTitle: "Register Successfully!", style: AlertStyle.success)
+        }
         
     }
     
@@ -92,6 +99,9 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
                 UserReEnterPasswordTXT.layer.borderColor = UIColor.red.cgColor
             }
         }
+    
+   
+    
     
     
     private func applyTextFieldStyles(to textField: UITextField) {
@@ -138,6 +148,10 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(red: 242.0/255.0, green: 244.0/255.0, blue: 246.0/255.0, alpha: 1.0)
+
+        
         Edits_Text_Fields()
         
         self.pickerView.delegate = self
@@ -172,6 +186,37 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             let buttonTitle = UserReEnterPasswordTXT.isSecureTextEntry ? "Show" : "Hide"
         ReShowHideBtn.setTitle(buttonTitle, for: .normal)
         }
+    
+    
+    //Alert
+    var validate:Bool{
+        if UserNameTXT.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+            _ = SweetAlert().showAlert("Enter a Name!")
+            return false
+        }
+        if UserEmailTXT.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+            _ = SweetAlert().showAlert("Enter Valid Email!")
+            return false
+        }
+        if UserNumberTXT.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+            _ = SweetAlert().showAlert("Enter Your Number!")
+            return false
+        }
+        if UserGenderTXT.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+            _ = SweetAlert().showAlert("Enter Your Gender")
+            return false
+        }
+        if UsePasswordTXT.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+            _ = SweetAlert().showAlert("Enter Valid Password!")
+            return false
+        }
+        if UserReEnterPasswordTXT.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+            _ = SweetAlert().showAlert("Enter Valid Password!")
+            return false
+        }
+        return true
+    }
+    
 }
 extension RegistrationViewController: UIPickerViewDelegate,UIPickerViewDataSource{
     
