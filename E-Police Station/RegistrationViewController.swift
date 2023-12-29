@@ -81,6 +81,39 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            // Dismiss the keyboard
+            textField.resignFirstResponder()
+            return true
+        }
+
+        // Check if the text field is empty when it loses focus
+        func textFieldDidEndEditing(_ textField: UITextField) {
+            if textField.text?.isEmpty ?? true {
+                // Animate the empty text field
+                animateEmptyTextField(textField)
+            }
+        }
+
+        // Function to animate the empty text field
+    func animateEmptyTextField(_ textField: UITextField) {
+            // Create a shake animation
+            let shakeAnimation = CABasicAnimation(keyPath: "position")
+            shakeAnimation.duration = 0.1
+            shakeAnimation.repeatCount = 2
+            shakeAnimation.autoreverses = true
+
+            // Set the initial and final positions for the animation
+            let fromPoint = CGPoint(x: textField.center.x - 5, y: textField.center.y)
+            let toPoint = CGPoint(x: textField.center.x + 5, y: textField.center.y)
+            shakeAnimation.fromValue = NSValue(cgPoint: fromPoint)
+            shakeAnimation.toValue = NSValue(cgPoint: toPoint)
+
+            // Apply the animation to the text field's layer
+            textField.layer.add(shakeAnimation, forKey: "position")
+        }
+    
     func validatePasswords() {
             let password = UsePasswordTXT.text ?? ""
             let reEnterPassword = UserReEnterPasswordTXT.text ?? ""
@@ -99,10 +132,6 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
                 UserReEnterPasswordTXT.layer.borderColor = UIColor.red.cgColor
             }
         }
-    
-   
-    
-    
     
     private func applyTextFieldStyles(to textField: UITextField) {
         textField.layer.cornerRadius = 20
@@ -147,6 +176,14 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        UserNameTXT.delegate = self
+        UserEmailTXT.delegate = self
+        UserNumberTXT.delegate = self
+        UserGenderTXT.delegate = self
+        UsePasswordTXT.delegate = self
+        UserReEnterPasswordTXT.delegate = self
         
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor(red: 242.0/255.0, green: 244.0/255.0, blue: 246.0/255.0, alpha: 1.0)

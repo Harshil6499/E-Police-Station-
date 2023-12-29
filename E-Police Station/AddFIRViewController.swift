@@ -20,12 +20,39 @@ class AddFIRViewController: UIViewController {
     @IBOutlet weak var FromDateFIRTXT: UITextField!
     @IBOutlet weak var ToDateFIRTXT: UITextField!
     
+    
+    
     @IBAction func FIRConfirmBTN(_ sender: Any) {
-        let main = storyboard?.instantiateViewController(withIdentifier: "OnlineComplaintViewController") as! OnlineComplaintViewController
-        self.navigationController?.pushViewController(main, animated: true)
+        let ok = storyboard?.instantiateViewController(withIdentifier: "OnlineComplaintViewController") as! OnlineComplaintViewController
+        self.navigationController?.pushViewController(ok, animated: true)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Edits_Text_Fields()
+    }
+    
+    private func ApplyTextFieldStyles(to textField: UITextField) {
+        textField.layer.cornerRadius = 20
+        textField.layer.masksToBounds = true
+        textField.layer.borderWidth = 0.7
+
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
+        textField.leftView = paddingView
+        textField.leftViewMode = .always
+    }
+    
+    private func Edits_Text_Fields(){
+        ApplyTextFieldStyles(to: DistrictNameTXT)
+        ApplyTextFieldStyles(to: PoliceStationNameTXT)
+        ApplyTextFieldStyles(to: FIRNumberTXT)
+        ApplyTextFieldStyles(to: AccusedNameTXT)
+        ApplyTextFieldStyles(to: ComplainantNameTXT)
+        ApplyTextFieldStyles(to: ComplainantMiddleNameTXT)
+        ApplyTextFieldStyles(to: ComplainantSurnameTXT)
+        ApplyTextFieldStyles(to: ToDateFIRTXT)
+        ApplyTextFieldStyles(to: FromDateFIRTXT)
+        
     }
 }

@@ -43,10 +43,45 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
             }
         }
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            // Dismiss the keyboard
+            textField.resignFirstResponder()
+            return true
+        }
+
+        // Check if the text field is empty when it loses focus
+        func textFieldDidEndEditing(_ textField: UITextField) {
+            if textField.text?.isEmpty ?? true {
+                // Animate the empty text field
+                animateEmptyTextField(textField)
+            }
+        }
+
+        // Function to animate the empty text field
+    func animateEmptyTextField(_ textField: UITextField) {
+            // Create a shake animation
+            let shakeAnimation = CABasicAnimation(keyPath: "position")
+            shakeAnimation.duration = 0.1
+            shakeAnimation.repeatCount = 2
+            shakeAnimation.autoreverses = true
+
+            // Set the initial and final positions for the animation
+            let fromPoint = CGPoint(x: textField.center.x - 5, y: textField.center.y)
+            let toPoint = CGPoint(x: textField.center.x + 5, y: textField.center.y)
+            shakeAnimation.fromValue = NSValue(cgPoint: fromPoint)
+            shakeAnimation.toValue = NSValue(cgPoint: toPoint)
+
+            // Apply the animation to the text field's layer
+            textField.layer.add(shakeAnimation, forKey: "position")
+        }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        UserEmailTextField.delegate = self
+//        UserPasswordTextField.delegate = self
+
         UserEmailTextField.layer.borderColor = UIColor.gray.cgColor
         UserEmailTextField.layer.borderWidth = 1.0
         
