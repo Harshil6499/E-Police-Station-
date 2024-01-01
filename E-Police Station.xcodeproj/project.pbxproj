@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156ABD4C76886F1DFB21FDD8 /* Pods_E_Police_Station.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F0F4DCBD4CDBD30AB8A089 /* Pods_E_Police_Station.framework */; };
 		181E15BD2B3D5C5D008FB2C5 /* SweetAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E15BC2B3D5C5D008FB2C5 /* SweetAlerts.swift */; };
 		183E3F452B3BEC0D00F58408 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E3F442B3BEC0D00F58408 /* RegistrationViewController.swift */; };
+		1843C4B32B428D7A008B87D4 /* GiveFeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843C4B22B428D7A008B87D4 /* GiveFeedBackViewController.swift */; };
 		1864C8722B3D512E003F5068 /* AddFIRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1864C8712B3D512E003F5068 /* AddFIRViewController.swift */; };
 		188AD5B02B3967FE0075AF3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD5AF2B3967FE0075AF3B /* AppDelegate.swift */; };
 		188AD5B22B3967FE0075AF3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD5B12B3967FE0075AF3B /* SceneDelegate.swift */; };
@@ -17,6 +19,7 @@
 		188AD5B92B3967FF0075AF3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188AD5B82B3967FF0075AF3B /* Assets.xcassets */; };
 		188AD5BC2B3967FF0075AF3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188AD5BA2B3967FF0075AF3B /* LaunchScreen.storyboard */; };
 		189603EB2B39AACD0006EFCD /* MissingPersonsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189603E92B39AACD0006EFCD /* MissingPersonsCollectionViewCell.swift */; };
+		189BFF3D2B427BEB00E55A81 /* FindPoliceStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BFF3C2B427BEB00E55A81 /* FindPoliceStationViewController.swift */; };
 		18B4AB3D2B3AD1D300E4B4DE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4AB3C2B3AD1D300E4B4DE /* LogInViewController.swift */; };
 		18B9EB2F2B3A9D3C003035DB /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9EB2E2B3A9D3C003035DB /* EmergencyViewController.swift */; };
 		18C970F92B3984660085F09C /* MissingPersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C970F82B3984660085F09C /* MissingPersonsViewController.swift */; };
@@ -25,8 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04559E58E68DF92E2F28B387 /* Pods-E-Police Station.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Police Station.release.xcconfig"; path = "Target Support Files/Pods-E-Police Station/Pods-E-Police Station.release.xcconfig"; sourceTree = "<group>"; };
 		181E15BC2B3D5C5D008FB2C5 /* SweetAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetAlerts.swift; sourceTree = "<group>"; };
 		183E3F442B3BEC0D00F58408 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		1843C4B22B428D7A008B87D4 /* GiveFeedBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveFeedBackViewController.swift; sourceTree = "<group>"; };
 		1864C8712B3D512E003F5068 /* AddFIRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFIRViewController.swift; sourceTree = "<group>"; };
 		188AD5AC2B3967FE0075AF3B /* E-Police Station.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Police Station.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188AD5AF2B3967FE0075AF3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +42,14 @@
 		188AD5BB2B3967FF0075AF3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188AD5BD2B3967FF0075AF3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189603E92B39AACD0006EFCD /* MissingPersonsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingPersonsCollectionViewCell.swift; sourceTree = "<group>"; };
+		189BFF3C2B427BEB00E55A81 /* FindPoliceStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPoliceStationViewController.swift; sourceTree = "<group>"; };
 		18B4AB3C2B3AD1D300E4B4DE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		18B9EB2E2B3A9D3C003035DB /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		18C970F82B3984660085F09C /* MissingPersonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingPersonsViewController.swift; sourceTree = "<group>"; };
 		18C970FA2B3991340085F09C /* Rules&RegulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rules&RegulationViewController.swift"; sourceTree = "<group>"; };
 		18CD452D2B3D74A000A4D27F /* OnlineComplaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineComplaintViewController.swift; sourceTree = "<group>"; };
+		212B325466DC66A7FE513344 /* Pods-E-Police Station.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Police Station.debug.xcconfig"; path = "Target Support Files/Pods-E-Police Station/Pods-E-Police Station.debug.xcconfig"; sourceTree = "<group>"; };
+		F6F0F4DCBD4CDBD30AB8A089 /* Pods_E_Police_Station.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Police_Station.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156ABD4C76886F1DFB21FDD8 /* Pods_E_Police_Station.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,8 @@
 			children = (
 				188AD5AE2B3967FE0075AF3B /* E-Police Station */,
 				188AD5AD2B3967FE0075AF3B /* Products */,
+				5BD5AB24592EFCF5E62EFD7E /* Pods */,
+				A3F5359ADE31F5C12C7591B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +109,27 @@
 				1864C8712B3D512E003F5068 /* AddFIRViewController.swift */,
 				18CD452D2B3D74A000A4D27F /* OnlineComplaintViewController.swift */,
 				181E15BC2B3D5C5D008FB2C5 /* SweetAlerts.swift */,
+				189BFF3C2B427BEB00E55A81 /* FindPoliceStationViewController.swift */,
+				1843C4B22B428D7A008B87D4 /* GiveFeedBackViewController.swift */,
 			);
 			path = "E-Police Station";
+			sourceTree = "<group>";
+		};
+		5BD5AB24592EFCF5E62EFD7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				212B325466DC66A7FE513344 /* Pods-E-Police Station.debug.xcconfig */,
+				04559E58E68DF92E2F28B387 /* Pods-E-Police Station.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3F5359ADE31F5C12C7591B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F0F4DCBD4CDBD30AB8A089 /* Pods_E_Police_Station.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 188AD5C02B3967FF0075AF3B /* Build configuration list for PBXNativeTarget "E-Police Station" */;
 			buildPhases = (
+				47F7FC1F8C492AA34F34BC7A /* [CP] Check Pods Manifest.lock */,
 				188AD5A82B3967FE0075AF3B /* Sources */,
 				188AD5A92B3967FE0075AF3B /* Frameworks */,
 				188AD5AA2B3967FE0075AF3B /* Resources */,
+				217A8628AC744272CBAFE3CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +200,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		217A8628AC744272CBAFE3CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-Police Station/Pods-E-Police Station-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-Police Station/Pods-E-Police Station-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-Police Station/Pods-E-Police Station-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47F7FC1F8C492AA34F34BC7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-Police Station-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		188AD5A82B3967FE0075AF3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -179,11 +253,13 @@
 				18C970F92B3984660085F09C /* MissingPersonsViewController.swift in Sources */,
 				183E3F452B3BEC0D00F58408 /* RegistrationViewController.swift in Sources */,
 				188AD5B42B3967FE0075AF3B /* ViewController.swift in Sources */,
+				1843C4B32B428D7A008B87D4 /* GiveFeedBackViewController.swift in Sources */,
 				18B4AB3D2B3AD1D300E4B4DE /* LogInViewController.swift in Sources */,
 				1864C8722B3D512E003F5068 /* AddFIRViewController.swift in Sources */,
 				188AD5B02B3967FE0075AF3B /* AppDelegate.swift in Sources */,
 				181E15BD2B3D5C5D008FB2C5 /* SweetAlerts.swift in Sources */,
 				188AD5B22B3967FE0075AF3B /* SceneDelegate.swift in Sources */,
+				189BFF3D2B427BEB00E55A81 /* FindPoliceStationViewController.swift in Sources */,
 				18C970FB2B3991350085F09C /* Rules&RegulationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,12 +407,14 @@
 		};
 		188AD5C12B3967FF0075AF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 212B325466DC66A7FE513344 /* Pods-E-Police Station.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GL4BB86GLN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "E-Police Station/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -344,6 +422,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,12 +438,14 @@
 		};
 		188AD5C22B3967FF0075AF3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04559E58E68DF92E2F28B387 /* Pods-E-Police Station.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GL4BB86GLN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "E-Police Station/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -372,6 +453,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
