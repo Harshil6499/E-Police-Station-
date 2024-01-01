@@ -9,6 +9,11 @@ import UIKit
 
 class OnlineComplaintViewController: UIViewController {
     
+    @IBAction func ComplationConfirmBTN(_ sender: Any) {
+        let main = storyboard?.instantiateViewController(withIdentifier: "CitizenHomeViewController") as! CitizenHomeViewController
+        self.navigationController?.pushViewController(main, animated: true)
+        saveUserData()
+    }
     @IBOutlet weak var ComplaintRegistrationDate: UITextField!
     @IBOutlet weak var NameTXT: UITextField!
     @IBOutlet weak var MobileNumberTXT: UITextField!
@@ -44,4 +49,22 @@ class OnlineComplaintViewController: UIViewController {
         ApplyTextFieldStyles(to: LocationTXT)
         
     }
+    
+    func saveUserData() {
+            let userDefaults = UserDefaults.standard
+        
+
+            // Save data from text fields to UserDefaults
+            userDefaults.set(ComplaintRegistrationDate.text, forKey: "ComplaintRegistrationDate")
+            userDefaults.set(NameTXT.text, forKey: "Name")
+            userDefaults.set(MobileNumberTXT.text, forKey: "MobileNumber")
+            userDefaults.set(EmailTXT.text, forKey: "Email")
+            userDefaults.set(GenderTXT.text, forKey: "Gender")
+            userDefaults.set(LocationAreaTXT.text, forKey: "LocationArea")
+            userDefaults.set(NearPoliceStationTXT.text, forKey: "NearPoliceStation")
+            userDefaults.set(LocationTXT.text, forKey: "Location")
+           
+            // Synchronize UserDefaults to persist the changes immediately
+            userDefaults.synchronize()
+        }
 }

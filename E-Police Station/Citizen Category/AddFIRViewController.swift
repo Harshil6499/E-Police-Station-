@@ -9,6 +9,16 @@ import UIKit
 
 class AddFIRViewController: UIViewController {
     
+    private var counter: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: "CounterKey")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "CounterKey")
+            UserDefaults.standard.synchronize() // Ensure immediate synchronization
+        }
+    }
+    
     //Text Fields Outlate
     @IBOutlet weak var DistrictNameTXT: UITextField!
     @IBOutlet weak var PoliceStationNameTXT: UITextField!
@@ -21,25 +31,30 @@ class AddFIRViewController: UIViewController {
     @IBOutlet weak var NumberTXT: UITextField!
     
     
-    
-    
     @IBAction func FIRConfirmBTN(_ sender: Any) {
-        let ok = storyboard?.instantiateViewController(withIdentifier: "OnlineComplaintViewController") as! OnlineComplaintViewController
+        let ok = storyboard?.instantiateViewController(withIdentifier: "CitizenHomeViewController") as! CitizenHomeViewController
         self.navigationController?.pushViewController(ok, animated: true)
+        
+        saveUserData()
     }
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Edits_Text_Fields()
-        saveUserData()
+        // FIRNumberTXT.text = "1"
+        counter += 1
+        FIRNumberTXT.text = String(counter)
+        
     }
     
     private func ApplyTextFieldStyles(to textField: UITextField) {
         textField.layer.cornerRadius = 20
         textField.layer.masksToBounds = true
         textField.layer.borderWidth = 0.7
-
+        
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
         textField.leftView = paddingView
         textField.leftViewMode = .always
@@ -59,36 +74,22 @@ class AddFIRViewController: UIViewController {
     }
     
     func saveUserData() {
-            let userDefaults = UserDefaults.standard
-
-            // Save data from text fields to UserDefaults
-            userDefaults.set(DistrictNameTXT.text, forKey: "DistrictName")
-            userDefaults.set(PoliceStationNameTXT.text, forKey: "PoliceStationName")
-            userDefaults.set(FIRNumberTXT.text, forKey: "FIRNumber")
-            userDefaults.set(AccusedNameTXT.text, forKey: "AccusedName")
-            userDefaults.set(ComplainantNameTXT.text, forKey: "ComplainantName")
-            userDefaults.set(ComplainantMiddleNameTXT.text, forKey: "ComplainantMiddleName")
-            userDefaults.set(ComplainantSurnameTXT.text, forKey: "ComplainantSurname")
-            userDefaults.set(FromDateFIRTXT.text, forKey: "FromDate")
-            userDefaults.set(NumberTXT.text, forKey: "Number")
-           
-            // Synchronize UserDefaults to persist the changes immediately
-            userDefaults.synchronize()
-        }
-    
-    func loadUserData() {
         let userDefaults = UserDefaults.standard
-
-        // Load data from UserDefaults to populate text fields
-        DistrictNameTXT.text = userDefaults.string(forKey: "textField1")
-        PoliceStationNameTXT.text = userDefaults.string(forKey: "textField2")
-        FIRNumberTXT.text = userDefaults.string(forKey: "textField3")
-        AccusedNameTXT.text = userDefaults.string(forKey: "textField4")
-        ComplainantNameTXT.text = userDefaults.string(forKey: "textField5")
-        ComplainantMiddleNameTXT.text = userDefaults.string(forKey: "textField6")
-        ComplainantSurnameTXT.text = userDefaults.string(forKey: "textField7")
-        FromDateFIRTXT.text = userDefaults.string(forKey: "textField7")
-        NumberTXT.text = userDefaults.string(forKey: "textField7")
+        
+        // Save data from text fields to UserDefaults
+        userDefaults.set(DistrictNameTXT.text, forKey: "DistrictName")
+        userDefaults.set(PoliceStationNameTXT.text, forKey: "PoliceStationName")
+        userDefaults.set(FIRNumberTXT.text, forKey: "FIRNumber")
+        userDefaults.set(AccusedNameTXT.text, forKey: "AccusedName")
+        userDefaults.set(ComplainantNameTXT.text, forKey: "ComplainantName")
+        userDefaults.set(ComplainantMiddleNameTXT.text, forKey: "ComplainantMiddleName")
+        userDefaults.set(ComplainantSurnameTXT.text, forKey: "ComplainantSurname")
+        userDefaults.set(FromDateFIRTXT.text, forKey: "FromDate")
+        userDefaults.set(NumberTXT.text, forKey: "Number")
+        
+        // Synchronize UserDefaults to persist the changes immediately
+        userDefaults.synchronize()
     }
-
+    
+    
 }

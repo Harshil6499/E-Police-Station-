@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		156ABD4C76886F1DFB21FDD8 /* Pods_E_Police_Station.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F0F4DCBD4CDBD30AB8A089 /* Pods_E_Police_Station.framework */; };
 		181E15BD2B3D5C5D008FB2C5 /* SweetAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E15BC2B3D5C5D008FB2C5 /* SweetAlerts.swift */; };
+		18228F262B42D4690092539E /* CitizenHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18228F252B42D4690092539E /* CitizenHomeViewController.swift */; };
+		18228F292B42EFE40092539E /* teTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18228F282B42EFE40092539E /* teTableViewCell.swift */; };
 		183E3F452B3BEC0D00F58408 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E3F442B3BEC0D00F58408 /* RegistrationViewController.swift */; };
 		1843C4B32B428D7A008B87D4 /* GiveFeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843C4B22B428D7A008B87D4 /* GiveFeedBackViewController.swift */; };
 		1864C8722B3D512E003F5068 /* AddFIRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1864C8712B3D512E003F5068 /* AddFIRViewController.swift */; };
@@ -22,6 +24,9 @@
 		189BFF3D2B427BEB00E55A81 /* FindPoliceStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BFF3C2B427BEB00E55A81 /* FindPoliceStationViewController.swift */; };
 		18B4AB3D2B3AD1D300E4B4DE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4AB3C2B3AD1D300E4B4DE /* LogInViewController.swift */; };
 		18B9EB2F2B3A9D3C003035DB /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9EB2E2B3A9D3C003035DB /* EmergencyViewController.swift */; };
+		18C378EE2B42B7BA005C9684 /* ViewFIRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C378ED2B42B7BA005C9684 /* ViewFIRViewController.swift */; };
+		18C378F12B42BFFC005C9684 /* teTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C378F02B42BFFC005C9684 /* teTableViewCell.swift */; };
+		18C378F32B42CFBA005C9684 /* ViewComplationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C378F22B42CFBA005C9684 /* ViewComplationViewController.swift */; };
 		18C970F92B3984660085F09C /* MissingPersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C970F82B3984660085F09C /* MissingPersonsViewController.swift */; };
 		18C970FB2B3991350085F09C /* Rules&RegulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C970FA2B3991340085F09C /* Rules&RegulationViewController.swift */; };
 		18CD452E2B3D74A000A4D27F /* OnlineComplaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD452D2B3D74A000A4D27F /* OnlineComplaintViewController.swift */; };
@@ -30,6 +35,8 @@
 /* Begin PBXFileReference section */
 		04559E58E68DF92E2F28B387 /* Pods-E-Police Station.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Police Station.release.xcconfig"; path = "Target Support Files/Pods-E-Police Station/Pods-E-Police Station.release.xcconfig"; sourceTree = "<group>"; };
 		181E15BC2B3D5C5D008FB2C5 /* SweetAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetAlerts.swift; sourceTree = "<group>"; };
+		18228F252B42D4690092539E /* CitizenHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenHomeViewController.swift; sourceTree = "<group>"; };
+		18228F282B42EFE40092539E /* teTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teTableViewCell.swift; sourceTree = "<group>"; };
 		183E3F442B3BEC0D00F58408 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		1843C4B22B428D7A008B87D4 /* GiveFeedBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveFeedBackViewController.swift; sourceTree = "<group>"; };
 		1864C8712B3D512E003F5068 /* AddFIRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFIRViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +52,9 @@
 		189BFF3C2B427BEB00E55A81 /* FindPoliceStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPoliceStationViewController.swift; sourceTree = "<group>"; };
 		18B4AB3C2B3AD1D300E4B4DE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		18B9EB2E2B3A9D3C003035DB /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		18C378ED2B42B7BA005C9684 /* ViewFIRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFIRViewController.swift; sourceTree = "<group>"; };
+		18C378F02B42BFFC005C9684 /* teTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teTableViewCell.swift; sourceTree = "<group>"; };
+		18C378F22B42CFBA005C9684 /* ViewComplationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComplationViewController.swift; sourceTree = "<group>"; };
 		18C970F82B3984660085F09C /* MissingPersonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingPersonsViewController.swift; sourceTree = "<group>"; };
 		18C970FA2B3991340085F09C /* Rules&RegulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rules&RegulationViewController.swift"; sourceTree = "<group>"; };
 		18CD452D2B3D74A000A4D27F /* OnlineComplaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineComplaintViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +74,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18228F272B42EF680092539E /* Visitor Category */ = {
+			isa = PBXGroup;
+			children = (
+				188AD5B32B3967FE0075AF3B /* ViewController.swift */,
+				183E3F442B3BEC0D00F58408 /* RegistrationViewController.swift */,
+				18C970F82B3984660085F09C /* MissingPersonsViewController.swift */,
+				18C970FA2B3991340085F09C /* Rules&RegulationViewController.swift */,
+				18B9EB2E2B3A9D3C003035DB /* EmergencyViewController.swift */,
+				18B4AB3C2B3AD1D300E4B4DE /* LogInViewController.swift */,
+				189603E92B39AACD0006EFCD /* MissingPersonsCollectionViewCell.swift */,
+			);
+			path = "Visitor Category";
+			sourceTree = "<group>";
+		};
+		18228F2A2B42F01B0092539E /* Citizen Category */ = {
+			isa = PBXGroup;
+			children = (
+				18228F252B42D4690092539E /* CitizenHomeViewController.swift */,
+				1864C8712B3D512E003F5068 /* AddFIRViewController.swift */,
+				18CD452D2B3D74A000A4D27F /* OnlineComplaintViewController.swift */,
+				189BFF3C2B427BEB00E55A81 /* FindPoliceStationViewController.swift */,
+				1843C4B22B428D7A008B87D4 /* GiveFeedBackViewController.swift */,
+			);
+			path = "Citizen Category";
+			sourceTree = "<group>";
+		};
+		18228F2B2B42F0F00092539E /* Iinspector Module Category */ = {
+			isa = PBXGroup;
+			children = (
+				18C378ED2B42B7BA005C9684 /* ViewFIRViewController.swift */,
+				18C378F22B42CFBA005C9684 /* ViewComplationViewController.swift */,
+			);
+			path = "Iinspector Module Category";
+			sourceTree = "<group>";
+		};
 		183E3F462B3BEC1300F58408 /* Support File */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,22 +140,16 @@
 		188AD5AE2B3967FE0075AF3B /* E-Police Station */ = {
 			isa = PBXGroup;
 			children = (
-				183E3F462B3BEC1300F58408 /* Support File */,
-				188AD5B32B3967FE0075AF3B /* ViewController.swift */,
 				188AD5B52B3967FE0075AF3B /* Main.storyboard */,
+				181E15BC2B3D5C5D008FB2C5 /* SweetAlerts.swift */,
 				188AD5BD2B3967FF0075AF3B /* Info.plist */,
 				188AD5B82B3967FF0075AF3B /* Assets.xcassets */,
-				183E3F442B3BEC0D00F58408 /* RegistrationViewController.swift */,
-				189603E92B39AACD0006EFCD /* MissingPersonsCollectionViewCell.swift */,
-				18C970FA2B3991340085F09C /* Rules&RegulationViewController.swift */,
-				18C970F82B3984660085F09C /* MissingPersonsViewController.swift */,
-				18B9EB2E2B3A9D3C003035DB /* EmergencyViewController.swift */,
-				18B4AB3C2B3AD1D300E4B4DE /* LogInViewController.swift */,
-				1864C8712B3D512E003F5068 /* AddFIRViewController.swift */,
-				18CD452D2B3D74A000A4D27F /* OnlineComplaintViewController.swift */,
-				181E15BC2B3D5C5D008FB2C5 /* SweetAlerts.swift */,
-				189BFF3C2B427BEB00E55A81 /* FindPoliceStationViewController.swift */,
-				1843C4B22B428D7A008B87D4 /* GiveFeedBackViewController.swift */,
+				183E3F462B3BEC1300F58408 /* Support File */,
+				18228F272B42EF680092539E /* Visitor Category */,
+				18228F2A2B42F01B0092539E /* Citizen Category */,
+				18228F2B2B42F0F00092539E /* Iinspector Module Category */,
+				18228F282B42EFE40092539E /* teTableViewCell.swift */,
+				18C378F02B42BFFC005C9684 /* teTableViewCell.swift */,
 			);
 			path = "E-Police Station";
 			sourceTree = "<group>";
@@ -247,17 +286,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C378F32B42CFBA005C9684 /* ViewComplationViewController.swift in Sources */,
 				189603EB2B39AACD0006EFCD /* MissingPersonsCollectionViewCell.swift in Sources */,
 				18CD452E2B3D74A000A4D27F /* OnlineComplaintViewController.swift in Sources */,
 				18B9EB2F2B3A9D3C003035DB /* EmergencyViewController.swift in Sources */,
+				18228F262B42D4690092539E /* CitizenHomeViewController.swift in Sources */,
 				18C970F92B3984660085F09C /* MissingPersonsViewController.swift in Sources */,
 				183E3F452B3BEC0D00F58408 /* RegistrationViewController.swift in Sources */,
 				188AD5B42B3967FE0075AF3B /* ViewController.swift in Sources */,
 				1843C4B32B428D7A008B87D4 /* GiveFeedBackViewController.swift in Sources */,
 				18B4AB3D2B3AD1D300E4B4DE /* LogInViewController.swift in Sources */,
 				1864C8722B3D512E003F5068 /* AddFIRViewController.swift in Sources */,
+				18C378EE2B42B7BA005C9684 /* ViewFIRViewController.swift in Sources */,
 				188AD5B02B3967FE0075AF3B /* AppDelegate.swift in Sources */,
 				181E15BD2B3D5C5D008FB2C5 /* SweetAlerts.swift in Sources */,
+				18C378F12B42BFFC005C9684 /* teTableViewCell.swift in Sources */,
+				18228F292B42EFE40092539E /* teTableViewCell.swift in Sources */,
 				188AD5B22B3967FE0075AF3B /* SceneDelegate.swift in Sources */,
 				189BFF3D2B427BEB00E55A81 /* FindPoliceStationViewController.swift in Sources */,
 				18C970FB2B3991350085F09C /* Rules&RegulationViewController.swift in Sources */,
